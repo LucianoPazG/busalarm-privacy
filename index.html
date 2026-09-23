@@ -48,6 +48,7 @@
 
     <h2>Qué no recopila BusAlarm</h2>
     <p>En el alcance actual no incluye backend propio para destinos o recorridos, cuentas, anuncios, SDK de analítica o publicidad, seguimiento remoto ni historial de recorridos visible. El nombre de una alarma puede aparecer en una notificación; lo que Android muestra en la pantalla bloqueada depende de la configuración del dispositivo.</p>
+    <p>Las versiones con la opción «Avisos en el reloj» permiten que Android y la app compañera de un reloj compatible reflejen la notificación, incluido el nombre de la alarma, en el reloj vinculado. La opción está desactivada por defecto. El aviso no contiene coordenadas; el reloj y su app compañera controlan la entrega y visualización. Esto no sincroniza las alarmas guardadas.</p>
 
     <h2>Conservación, copias y eliminación</h2>
     <p>Los datos locales permanecen hasta que el usuario elimina la alarma o favorito desde la aplicación, borra los datos de BusAlarm en Ajustes de Android o desinstala la aplicación, sujeto al funcionamiento de Android. La base Room, las preferencias de alarmas y la configuración sensible están excluidas de las reglas de backup y transferencia de Android; no se promete su restauración mediante backup. Las solicitudes de tiles quedan sujetas a la conservación de los proveedores externos.</p>
@@ -71,6 +72,7 @@
     <h2>Data processed by the app</h2>
     <p>With the app’s consent and Android permissions, BusAlarm uses the device’s precise location to show position and evaluate zones or line crossings. Evaluation happens on the device. It may continue in the background through Android’s location foreground service when enabled by the user; this depends on permissions, GPS, Android, battery and manufacturer restrictions. GPS location is not sent to a BusAlarm backend.</p>
     <p>The app stores alarm names and descriptions, coordinates, radii and line points, rules, repetition, status, favorites, language, tone, volume and vibration locally in Room and Android preferences. There is no BusAlarm account, sign-in or cross-device synchronization.</p>
+    <p>Versions with the optional “Watch alerts” setting can allow Android and a compatible watch companion app to mirror an alarm notification, including its name, to a paired watch. This setting is off by default. The alert contains no coordinates; the watch and its companion app control notification display and delivery. This does not synchronize your saved alarms.</p>
     <h2>Maps and external services</h2>
     <p>Maps use osmdroid and standard OpenStreetMap tiles. A tile request connects the phone to map infrastructure, which may receive the IP address, technical request data and the approximate visible map area. Delivery uses a CDN that includes Fastly. BusAlarm does not control those providers’ retention or practices.</p>
     <ul>
